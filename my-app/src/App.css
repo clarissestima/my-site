@@ -16,19 +16,11 @@ body {
   max-width: 740px;
   box-sizing: border-box;
   padding: 20px;
-  background-color: antiquewhite;
+  background: var(--color-tan);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   max-height: calc(100vh - 40px);
-}
-
-.post {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
 }
 
 h1 {
