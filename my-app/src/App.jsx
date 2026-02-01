@@ -1,7 +1,10 @@
 import './App.css'
-import Post from './components/Post'
+import Header from './components/Header'
+import Navigation from './components/Navigation'
+import IntroSection from './components/IntroSection'
+import PostList from './components/PostList'
+import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
-import logo from './assets/clariest3.gif'
 
 function App() {
   const posts = [
@@ -11,25 +14,17 @@ function App() {
   ]
 
   return (
-    <div className="container">
-        <header className="site-header">
-          <img src={logo} alt="clari est's blog" className="site-logo" />
-          <h1 className="sr-only">clari est's blog</h1>
-        </header>
-      {posts.map(p => (
-        <Post
-          key={p.id}
-          title={p.title}
-          excerpt={p.excerpt}
-          author={p.author}
-          date={p.date}
-          onReadMore={() => alert(`Abrir post: ${p.title}`)}
-        />
-      ))}
+    <div className="main-container">
+      <Header />
+      <Navigation />
+      <IntroSection />
+      <div className="content-wrapper">
+        <PostList posts={posts} />
+        <Sidebar />
+      </div>
       <Footer />
     </div>
   )
-  
 }
 
 export default App
