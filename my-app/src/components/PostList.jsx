@@ -1,3 +1,4 @@
+import './PostList.css'
 import Post from './Post'
 
 function PostList({ posts }) {

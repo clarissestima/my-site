@@ -1,3 +1,5 @@
+import './Navigation.css'
+
 function Navigation() {
   return (
     <nav className="site-nav">
