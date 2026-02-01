@@ -1,6 +1,6 @@
 :root {
   --void-image: url('/mcvoid.gif');
-  --flower-image: url('/flowerpattern.png');
-  --plaid-image: url('/plaidbrown2.png');
-  --plaid2-image: url('/plaidpink.png');
+  --flower-image: url('/flowerpattern.jpg');
+  --plaid-image: url('/plaidpink.jpg');
+  --plaid2-image: url('/plaidgreen.jpg');
 }

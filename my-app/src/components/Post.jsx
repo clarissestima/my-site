@@ -17,7 +17,7 @@ export default function Post({ title, excerpt, content, author, date, image, onR
         {excerpt ? <p className="post-excerpt">{excerpt}</p> : <div className="post-content">{content}</div>}
         {onReadMore && (
           <div className="post-actions">
-            <button className="read-more" onClick={onReadMore}>Ler mais</button>
+            <button className="read-more" onClick={onReadMore}>rabo</button>
           </div>
         )}
       </div>

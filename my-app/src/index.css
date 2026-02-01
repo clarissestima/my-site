@@ -5,11 +5,26 @@
 
   color-scheme: light dark;
   color: var(--color-text);
-  background-image: var(--plaid2-image);
+  /* keep variable usage here if needed, but apply background to body */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* use CSS variable with direct URL fallback to ensure it loads */
+  background-image: var(--plaid-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--color-text);
 }
 

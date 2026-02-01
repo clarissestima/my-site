@@ -5,8 +5,6 @@
 --color-background-alt: #AB8476;
 --color-tan: #AB8476;
 --color-brown: #684756;
-  /* caminho para imagem de fundo pública (coloque em /public) */
-  --bg-image: url('/mcvoid.gif');
 }
 
 /* Facilita troca de tema futura */
