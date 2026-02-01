@@ -1,5 +1,7 @@
 import './App.css'
 import Post from './components/Post'
+import Footer from './components/Footer'
+import logo from './assets/clariest3.gif'
 
 function App() {
   const posts = [
@@ -10,7 +12,10 @@ function App() {
 
   return (
     <div className="container">
-      <h1>clari est's blog</h1>
+        <header className="site-header">
+          <img src={logo} alt="clari est's blog" className="site-logo" />
+          <h1 className="sr-only">clari est's blog</h1>
+        </header>
       {posts.map(p => (
         <Post
           key={p.id}
@@ -21,8 +26,10 @@ function App() {
           onReadMore={() => alert(`Abrir post: ${p.title}`)}
         />
       ))}
+      <Footer />
     </div>
   )
+  
 }
 
 export default App

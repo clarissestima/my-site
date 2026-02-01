@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: var(--color-text);
-  background: var(--color-background);
+  background-image: var(--plaid2-image);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -1,10 +1,12 @@
 :root {
 /* Background e Superfície */
---color-background: #606c38;
---color-text: #283618;
---color-background-alt: #fefae0;
---color-tan: #dda15e;
---color-brown: #bc6c25;
+--color-background: #1A1423;
+--color-text: #3D314A;
+--color-background-alt: #AB8476;
+--color-tan: #AB8476;
+--color-brown: #684756;
+  /* caminho para imagem de fundo pública (coloque em /public) */
+  --bg-image: url('/mcvoid.gif');
 }
 
 /* Facilita troca de tema futura */

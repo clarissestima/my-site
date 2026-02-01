@@ -16,7 +16,10 @@ body {
   max-width: 740px;
   box-sizing: border-box;
   padding: 20px;
-  background: var(--color-tan);
+  background-color: var(--color-brown);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
@@ -27,5 +30,29 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-logo {
+  display: block;
+  width: 340px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 18px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
