@@ -1,9 +1,8 @@
 .site-nav {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
-  background-color: var(--color-primary);
+  justify-content: space-evenly;
+  padding: 10px;
+  background: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary-dark));
   flex-wrap: wrap;
 }
 

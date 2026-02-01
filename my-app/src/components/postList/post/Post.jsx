@@ -1,7 +1,7 @@
 import React from 'react'
 import './Post.css'
 
-export default function Post({ title, excerpt, content, author, date, image, onReadMore }) {
+export default function Post({ title, excerpt, content, author, date, image}) {
   return (
     <article className="post-card">
       {image && (
@@ -15,11 +15,7 @@ export default function Post({ title, excerpt, content, author, date, image, onR
           <div className="post-meta">{author} · {date}</div>
         </header>
         {excerpt ? <p className="post-excerpt">{excerpt}</p> : <div className="post-content">{content}</div>}
-        {onReadMore && (
-          <div className="post-actions">
-            <button className="read-more" onClick={onReadMore}>rabo</button>
-          </div>
-        )}
+      
       </div>
     </article>
   )

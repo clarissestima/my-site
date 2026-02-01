@@ -1,21 +1,22 @@
 .site-header {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: var(--color-brown);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding-top: 20px;
+  padding-right: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .site-logo {
   display: block;
-  width: 280px;
+  width: 350px;
   max-width: 90%;
   height: auto;
-  margin: 0 auto;
-  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .site-logo {
-    width: 200px;
+    width: 350px;
   }
 }

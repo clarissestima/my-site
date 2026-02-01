@@ -17,7 +17,6 @@ function App() {
     <div className="main-container">
       <Header />
       <Navigation />
-      <IntroSection />
       <div className="content-wrapper">
         <PostList posts={posts} />
         <Sidebar />
