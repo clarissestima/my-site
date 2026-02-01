@@ -13,7 +13,8 @@ body {
   flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: var(--color-brown);
+  color: white;
+  background-color: var(--color-tertiary);
 }
 
 /* Main Content Layout */

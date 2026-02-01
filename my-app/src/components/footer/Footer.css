@@ -1,9 +1,9 @@
 .footer {
-  background-color: var(--color-brown);
-  color: #fff;
+  background-color: var(--color-secondary);
+  color: white;
   padding: 40px 20px;
   margin-top: 60px;
-  border-top: 4px solid var(--color-tan);
+  border-top: 4px solid var(--color-primary);
 }
 
 .footer-content {
@@ -27,13 +27,13 @@
 }
 
 .footer-section a {
-  color: #e0e0e0;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: var(--color-tan);
+  color: var(--color-secondary);
 }
 
 .footer-section li {
@@ -44,5 +44,5 @@
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #aaa;
+  color: white;
 }

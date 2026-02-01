@@ -1,22 +1,15 @@
 :root {
-/* Background e Superfície */
---color-background: #1A1423;
---color-text: #3D314A;
---color-tan: #AB8476;
---color-brown: #684756;
-
---color-primary: #e7bbbc;
---color-secondary: #9d7e67;
---color-tertiary: #e6e7d1;
+  --color-primary: #e7bbbc;
+  --color-secondary: #9d7e67;
+  --color-tertiary: #e6e7d1;
 }
 
-/* Facilita troca de tema futura */
+/* Facilita troca de tema futura 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f172a;
-    --color-surface: #0b1220;
-    --color-muted: #9ca3af;
-    --color-primary: #60a5fa;
-    --text-default: #e6eef8;
+    --color-primary: #9d7e67;
+    --color-secondary: #e7bbbc;
+    --color-tertiary: #3b3a32;
   }
 }
+*/

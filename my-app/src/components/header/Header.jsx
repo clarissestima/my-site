@@ -1,5 +1,5 @@
 import './Header.css'
-import logo from '../assets/clariest3.gif'
+import logo from '../../assets/clariest3.gif'
 
 function Header() {
   return (
