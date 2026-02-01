@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Large files
+public/mcvoid.gif
+*.gif
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
