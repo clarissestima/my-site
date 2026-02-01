@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--color-secondary);
-  color: white;
+  color: var(--color-tertiary-light);
   padding: 40px 20px;
   margin-top: 60px;
   border-top: 4px solid var(--color-primary);
@@ -27,7 +27,7 @@
 }
 
 .footer-section a {
-  color: white;
+  color: var(--color-tertiary-light);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -44,5 +44,5 @@
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
+  color: var(--color-tertiary-light);
 }

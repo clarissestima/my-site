@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
-  color: white;
+  color: var(--color-tertiary-light);
   background-color: var(--color-tertiary);
 }
 

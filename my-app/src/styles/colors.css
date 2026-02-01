@@ -1,7 +1,15 @@
 :root {
+  --color-primary-light: #fdd8d8;
   --color-primary: #e7bbbc;
+  --color-primary-dark: #c09293;
+
+  --color-secondary-light: #c5aa95;
   --color-secondary: #9d7e67;
+  --color-secondary-dark: #7a614e;
+
+  --color-tertiary-light: #fbfcef;
   --color-tertiary: #e6e7d1;
+  --color-tertiary-dark: #9fa090;
 }
 
 /* Facilita troca de tema futura 
