@@ -1,11 +1,12 @@
 import './Header.css'
-import logo from '../../assets/clariestgreen2.gif'
+import logo from '../../assets/text.gif'
 
 function Header() {
   return (
     <header className="site-header">
-      <img src={logo} alt="clari est's blog" className="site-logo" />
-      <h1 className="sr-only">clari est's blog</h1>
+      <div className="logo-container">
+        <img src={logo} alt="clari est's blog logo" className="logo-image" />
+      </div>
     </header>
   )
 }

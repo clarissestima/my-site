@@ -1,7 +1,7 @@
 :root {
-  font-family: Comic Sans MS, cursive, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: var(--color-text);

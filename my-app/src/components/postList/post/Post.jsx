@@ -3,6 +3,7 @@ import './Post.css'
 
 export default function Post({ title, excerpt, content, author, date, image}) {
   return (
+    <div className='post-background'>
     <article className="post-card">
       {image && (
         <div className="post-image">
@@ -18,5 +19,6 @@ export default function Post({ title, excerpt, content, author, date, image}) {
       
       </div>
     </article>
+    </div>
   )
 }
