@@ -16,7 +16,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   color: var(--color-tertiary-light);
-  background-color: var(--color-primary-light);
+  background-color: var(--color-tertiary-light);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 

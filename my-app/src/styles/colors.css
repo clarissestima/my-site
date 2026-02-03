@@ -1,7 +1,7 @@
 :root {
   --color-primary-light: #fdd8d8;
   --color-primary: #e7bbbc;
-  --color-primary-dark: #c09293;
+  --color-primary-dark: #d6a4a5;
 
   --color-secondary-light: #c5aa95;
   --color-secondary: #9d7e67;
@@ -9,7 +9,7 @@
 
   --color-tertiary-light: #fbfcef;
   --color-tertiary: #e6e7d1;
-  --color-tertiary-dark: #9fa090;
+  --color-tertiary-dark: #b3b4a0;
 }
 
 /* Facilita troca de tema futura 
