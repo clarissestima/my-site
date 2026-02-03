@@ -7,10 +7,20 @@
   align-items: center;
 }
 
+.lace-container {
+  display: flex;
+  justify-content: flex-end;
+  height: min-content;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
 .logo-image {
   display: flex;
   justify-content: flex-end;
-  align-self: center;
-  padding-right: 440px;
-  padding-top: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 200px;
+  right: 300px;
+  z-index: 2;
 }
