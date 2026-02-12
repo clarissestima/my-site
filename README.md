@@ -4,31 +4,31 @@ Este é um projeto de blog pessoal desenvolvido em React, com foco em praticar a
 
 🚀 Objetivo do Projeto
 
--> Aplicar conceitos de React na prática
--> Estruturar componentes reutilizáveis
--> Trabalhar gerenciamento de estado
--> Implementar integração com API
--> Evoluir para um projeto completo com autenticação e backend
+-> Aplicar conceitos de React na prática 
+-> Estruturar componentes reutilizáveis 
+-> Trabalhar gerenciamento de estado 
+-> Implementar integração com API 
+-> Evoluir para um projeto completo com autenticação e backend 
 
 🛠 Tecnologias Utilizadas
 
--> React
--> JavaScript (ES6+)
--> HTML5
--> CSS3
--> Git & GitHub
+-> React 
+-> JavaScript (ES6+) 
+-> HTML5 
+-> CSS3 
+-> Git & GitHub 
 
 📌 Funcionalidades Atuais
 
--> Estrutura inicial do blog
--> Página principal com listagem de posts
--> Organização de componentes
+-> Estrutura inicial do blog 
+-> Página principal com listagem de posts 
+-> Organização de componentes 
 
 🔄 Em Desenvolvimento
 
--> Sistema de criação e edição de posts
--> Integração com backend
--> Melhorias de performance e SEO
+-> Sistema de criação e edição de posts 
+-> Integração com backend 
+-> Melhorias de performance e SEO 
 
 📷 Preview
 
@@ -51,7 +51,7 @@ npm start
 
 🎯 Próximos Passos
 
--> Estruturar melhor os componentes
--> Implementar consumo de API
--> Adicionar sistema de comentários
--> Deploy da aplicação
+-> Estruturar melhor os componentes 
+-> Implementar consumo de API 
+-> Adicionar sistema de comentários 
+-> Deploy da aplicação 
