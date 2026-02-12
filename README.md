@@ -1,18 +1,22 @@
 📝 Meu Blog Pessoal (Em Desenvolvimento)
 
-Este é um projeto de blog pessoal que estou desenvolvendo com foco em prática de front-end, organização de código e integração com backend. O objetivo é criar uma plataforma simples, responsiva e funcional para publicação de conteúdos.
+Este é um projeto de blog pessoal desenvolvido em React, com foco em praticar arquitetura de componentes, organização de estado, consumo de API e boas práticas de front-end. O projeto está em evolução contínua e será expandido com novas funcionalidades ao longo do desenvolvimento.
 
 🚀 Objetivo do Projeto
 
--> Praticar desenvolvimento front-end
--> Trabalhar estruturação de layout e componentes
--> Implementar responsividade
--> Integrar com backend/API futuramente
--> Evoluir o projeto continuamente com novas funcionalidades
+-> Aplicar conceitos de React na prática
+-> Estruturar componentes reutilizáveis
+-> Trabalhar gerenciamento de estado
+-> Implementar integração com API
+-> Evoluir para um projeto completo com autenticação e backend
 
 🛠 Tecnologias Utilizadas
 
 -> React
+-> JavaScript (ES6+)
+-> HTML5
+-> CSS3
+-> Git & GitHub
 
 📌 Funcionalidades Atuais
 
@@ -30,17 +34,21 @@ Este é um projeto de blog pessoal que estou desenvolvendo com foco em prática 
 
 <img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/2cd9a4ac-87b6-4602-abe5-3c52dc5edaae" />
 
-
 📦 Como executar o projeto
+```bash
 # Clonar o repositório
-git clone <link-do-repositorio>
-
+git clone https://github.com/seuusuario/seurepositorio.git
 
 # Entrar na pasta
 cd nome-do-projeto
 
+# Instalar dependências
+npm install
 
-# Abrir o index.html no navegador
+# Rodar o projeto
+npm start
+```
+
 🎯 Próximos Passos
 
 -> Estruturar melhor os componentes
