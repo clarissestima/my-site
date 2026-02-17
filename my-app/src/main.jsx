@@ -8,14 +8,17 @@ import { initSparkles } from './effects/sparkles'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import NotFoundSreen from './screens/notFoundScreen/NotFoundScreen.jsx'
 import AboutScreen from './screens/aboutScreen/AboutScreen.jsx'
+import GalleryScreen from './screens/galleryScreen/GalleryScreen.jsx'
+import PinterestScreen from './screens/pinterestScreen/PinterestScreen.jsx'
+import SewingScreen from './screens/sewingScreen/SewingScreen.jsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/home", element: <App />},
   {path: "/about", element: <AboutScreen />},
-  {path: "/gallery", element: <div>Gallery Page</div>},
-  {path: "/pinterest", element: <div>Pinterest Board Page</div>},
-  {path: "/sewing", element: <div>Sewing Page</div>},
+  {path: "/gallery", element: <GalleryScreen />},
+  {path: "/pinterest", element: <PinterestScreen />},
+  {path: "/sewing", element: <SewingScreen />},
   {path: "*", element: <NotFoundSreen />},
 ]);
 
