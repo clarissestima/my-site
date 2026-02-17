@@ -1,0 +1,58 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px);
+  gap: 32px;
+  padding: 16px;
+}
+
+.album-background {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+
+  background-image: var(--plaid-image);
+  background-size: cover;
+  background-position: center;
+
+  padding: 15px;
+
+  transition: none;
+}
+
+.album-title {
+  text-transform: lowercase;
+  color: var(--color-secondary-dark);
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.album-title::before {
+  content: "★";
+  width: 20px;
+  height: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.album-grid {
+  background-color: var(--color-primary);
+  box-shadow: 4px 4px 0 var(--color-primary-dark);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  padding: 16px;
+  gap: 16px;
+
+  position: relative;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-background:nth-child(even) .album-grid {
+  transform: rotate(1.5deg);
+}
+
+.album-background:nth-child(odd) .album-grid {
+  transform: rotate(-1.5deg);
+}

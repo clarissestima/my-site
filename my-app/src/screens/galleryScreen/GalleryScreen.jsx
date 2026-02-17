@@ -1,10 +1,15 @@
 import './GalleryScreen.css'
 import Layout from '../../components/layout/Layout'
+import GalleryGrid from './galleryGrid/GalleryGrid'
 
 function GalleryScreen() {
 
 return (
-    <Layout />
+    <Layout >      
+      <div className="content-wrapper">
+        <GalleryGrid />
+      </div>
+    </Layout>
   )
 }
 

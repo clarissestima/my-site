@@ -8,7 +8,6 @@
   margin: 0 auto;
   color: var(--color-tertiary-light);
   background-color: var(--color-tertiary);
-  box-shadow: 4px 4px 0 var(--color-primary-dark);
 }
 
 .content-wrapper {
@@ -20,6 +19,8 @@
 
   width: 100%;
   box-sizing: border-box;
+
+  align-items: stretch;
 }
 
 @media (max-width: 768px) {

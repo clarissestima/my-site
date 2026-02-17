@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="footer-content">
 
         <div className="footer-section">
-          <h3 className="footer-title">find me there ✦</h3>
+          <h3 className="footer-title">find me there</h3>
 
           <ul className="footer-list">
             {socialLinks.map((link) => (
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h3 className="footer-title">currently ✦</h3>
+          <h3 className="footer-title">currently</h3>
 
           <div className="currently">
             <p>
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {currentYear} Clari ✿ made with care</p>
+        <p>© {currentYear} Clari ★ made with care</p>
       </div>
     </footer>
   )
