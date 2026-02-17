@@ -1,7 +1,7 @@
-import './NotFoundPage.css';
+import './NotFoundScreen.css';
 import { Link } from 'react-router-dom';
 
-function NotFoundPage() {
+function NotFoundScreen() {
     return (
         <div>
             <h1>Page Not Found</h1>
@@ -10,4 +10,4 @@ function NotFoundPage() {
     );
 };
 
-export default NotFoundPage;
+export default NotFoundScreen;

@@ -3,6 +3,7 @@ import Navigation from '../../components/nav/Navigation'
 import PostList from '../homeScreen/components/postList/PostList'
 import Sidebar from '../../screens/homeScreen/components/sidebar/Sidebar'
 import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/Header'
 
 function HomeScreen() {
     const posts = [
@@ -12,6 +13,8 @@ function HomeScreen() {
   ]
 
   return (
+    <div>
+      <Header />
       <div className="main-container">
           <Navigation />
           <div className="content-wrapper">
@@ -20,6 +23,7 @@ function HomeScreen() {
           </div>
           <Footer />
       </div>
+    </div>
   )
 }
 
