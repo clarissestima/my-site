@@ -6,7 +6,7 @@ import './index.css'
 import App from './App.jsx'
 import { initSparkles } from './effects/sparkles'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import NotFoundPage from './components/notFoundPage/NotFoundPage.jsx'
+import NotFoundPage from './screens/notFoundScreen/NotFoundPage.jsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},

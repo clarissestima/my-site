@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/header/Header'
-import MiddleContainer from './components/middleContainer/MiddleContainer'
+import MiddleContainer from './screens/homeScreen/HomeScreen'
 
 function App() {
 

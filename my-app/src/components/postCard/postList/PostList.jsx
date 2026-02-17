@@ -1,0 +1,21 @@
+import './PostList.css'
+import Post from '../Post'
+
+function PostList({ posts }) {
+  return (
+    <section className="left-section">
+      {posts.map(p => (
+        <Post
+          key={p.id}
+          title={p.title}
+          excerpt={p.excerpt}
+          author={p.author}
+          date={p.date}
+          onReadMore={() => alert(`Abrir post: ${p.title}`)}
+        />
+      ))}
+    </section>
+  )
+}
+
+export default PostList

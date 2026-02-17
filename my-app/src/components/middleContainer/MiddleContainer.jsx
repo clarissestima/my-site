@@ -1,8 +1,8 @@
 import './MiddleContainer.css'
-import Navigation from '../nav/Navigation'
-import PostList from '../../screens/homeScreen/components/postList/PostList'
+import Navigation from '../../components/nav/Navigation'
+import PostList from '../homeScreen/components/postList/PostList'
 import Sidebar from '../../screens/homeScreen/components/sidebar/Sidebar'
-import Footer from '../footer/Footer'
+import Footer from '../../components/footer/Footer'
 
 function MiddleContainer() {
     const posts = [
