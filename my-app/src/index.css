@@ -17,6 +17,8 @@ html, body, #root {
   height: 100%;
 }
 
+
+
 body {
   margin: 0;
   /* use CSS variable with direct URL fallback to ensure it loads */
@@ -28,3 +30,29 @@ body {
   color: var(--color-text);
 }
 
+/* Global scrollbar styles */
+
+html {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--color-primary) var(--color-tertiary);
+}
+
+/*Global scrollbar styles for WebKit browsers */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-tertiary);
+  border-left: 2px solid var(--color-secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid var(--color-secondary-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}

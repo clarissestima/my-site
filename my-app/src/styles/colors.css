@@ -10,6 +10,10 @@
   --color-tertiary-light: #fbfcef;
   --color-tertiary: #e6e7d1;
   --color-tertiary-dark: #b3b4a0;
+
+  --accent-sage: #8fa88f;
+  --accent-rose-deep: #b06a78;
+  --accent-cream-glow: #fff6dc;
 }
 
 /* Facilita troca de tema futura 

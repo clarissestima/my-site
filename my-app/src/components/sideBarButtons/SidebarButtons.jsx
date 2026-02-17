@@ -12,7 +12,7 @@ const buttons = [
 function SidebarButtons() {
   return (
     <div className="sidebar-buttons">
-      <h3 className="buttons-title">Cool Sites</h3>
+      <h3 className="buttons-title">~*~ Cool Links ~*~</h3>
 
       <div className="buttons-scroll">
         {buttons.map((b, index) => (

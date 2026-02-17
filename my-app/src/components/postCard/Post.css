@@ -1,15 +1,16 @@
 .post-background {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
-  gap: 16px;
+  gap: 10px;
   align-items: stretch;
+
   background-image: var(--plaid-image);
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  padding: 12px;
+
+  transition: none;
 }
 
 .post-card {
@@ -21,15 +22,45 @@
   min-width: 0;
   height: 100%;
   box-sizing: border-box;
-  background: radial-gradient(circle, var(--color-primary-light) 0%, var(--color-primary) 50%, var(--color-primary-dark) 100%);
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  background: radial-gradient(
+    circle at 30% 20%,
+    var(--color-primary-light) 0%,
+    var(--color-primary) 60%,
+    var(--color-primary-dark) 100%
+  );
+  padding: 16px;
+
+  box-shadow: 4px 4px 0 var(--color-primary-dark);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--color-primary);
+  box-shadow: 6px 8px 0 var(--color-primary-dark);
+}
+
+.post-card::after {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+
+  font-size: 0.75rem;
+  color: var(--color-secondary-dark);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.post-card:hover::after {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.post-card:nth-child(even)::before {
+  transform: translateX(-50%) rotate(2deg);
 }
 
 .post-image img {
@@ -39,18 +70,29 @@
 }
 
 .post-title {
-  margin: 0 0 8px 0;
-  font-size: 1.3rem;
-  font-weight: 600;
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: var(--color-secondary-dark);
 }
 
 .post-meta {
-  font-size: 0.85rem;
-  margin-bottom: 10px;
-  opacity: 0.8;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  color: var(--color-secondary);
+  border-bottom: 1px dashed var(--color-secondary);
+  padding-bottom: 4px;
 }
 
 .post-excerpt {
-  margin: 0 0 12px 0;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+.post-card::before {
+  content: "★ ";
+  margin-bottom: 6px;
+  color: var(--color-tertiary-light);
+  font-size: 0.9rem;
 }
