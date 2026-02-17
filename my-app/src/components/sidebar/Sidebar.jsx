@@ -1,5 +1,5 @@
 import './Sidebar.css'
-import Buttons from './buttons/Buttons.jsx'
+import Buttons from '../../../../components/buttons/Buttons.jsx'
 
 function Sidebar() {
   return (

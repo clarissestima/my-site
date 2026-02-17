@@ -1,7 +1,7 @@
 import './MiddleContainer.css'
 import Navigation from '../nav/Navigation'
-import PostList from '../postList/PostList'
-import Sidebar from '../sidebar/Sidebar'
+import PostList from '../../screens/homeScreen/components/postList/PostList'
+import Sidebar from '../../screens/homeScreen/components/sidebar/Sidebar'
 import Footer from '../footer/Footer'
 
 function MiddleContainer() {

@@ -11,7 +11,9 @@ import NotFoundPage from './components/notFoundPage/NotFoundPage.jsx'
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/about", element: <div>About Page</div>},
-  {path: "/contact", element: <div>Contact Page</div>},
+  {path: "/gallery", element: <div>Gallery Page</div>},
+  {path: "/pinterest", element: <div>Pinterest Board Page</div>},
+  {path: "/sewing", element: <div>Sewing Page</div>},
   {path: "*", element: <NotFoundPage />},
 ]);
 
