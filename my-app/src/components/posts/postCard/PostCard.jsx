@@ -1,18 +1,23 @@
 import './PostCard.css'
 
-export default function PostCard({ post }) {
+function PostCard({ title, excerpt, author, date, image, onReadMore }) {
+  // fallback de imagem se image for undefined
+  const imgSrc = image || '/path/to/fallback.png'
+
   return (
     <div className="post-background">
       <div className="post-card">
-        {post.image && (
-          <div className="post-image">
-            <img src={post.image}/>
-          </div>
-        )}
-        <h2 className="post-title">{post.title}</h2>
-        <div className="post-meta">{post.date}</div>
-        <p className="post-excerpt">{post.excerpt}</p>
+              {imgSrc && (
+        <div className="post-image">
+          <img src={imgSrc}/>
+        </div>
+      )}
+        <h2 className="post-title">{title || 'Sem título'}</h2>
+        <p className="post-meta">{author || 'Anônimo'} — {date || 'Data desconhecida'}</p>
+        <p className="post-excerpt">{excerpt || 'Sem resumo disponível.'}</p>
       </div>
     </div>
   )
 }
+
+export default PostCard

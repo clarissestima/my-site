@@ -1,14 +1,23 @@
 import './PostGrid.css'
 import PostCard from '../postCard/PostCard'
-import { posts } from '../../../data/posts'
 
-function PostGrid() {
+function PostGrid({ posts, limit = 6 }) {
+  const lastPosts = posts.slice(-limit).reverse()
+
   return (
-    <div className="post-grid">
-      {posts.map(post => (
-        <PostCard key={post.id} post={post} />
+    <section className="post-grid">
+      {lastPosts.map(p => (
+        <PostCard
+          key={p.id}
+          title={p.title}
+          excerpt={p.excerpt}
+          author={p.author}
+          date={p.date}
+          image={p.image} // pode ser undefined
+          onReadMore={() => alert(`Abrir post: ${p.title}`)}
+        />
       ))}
-    </div>
+    </section>
   )
 }
 
