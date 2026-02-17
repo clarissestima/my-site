@@ -1,5 +1,5 @@
 import Layout from '../../components/layout/Layout'
-import PostGrid from '../../components/posts/postGrid/PostGrid'
+import PostGrid from './components/posts/postGrid/PostGrid'
 import Sidebar from './components/sidebar/Sidebar'
 import { posts } from '../../data/posts'
 

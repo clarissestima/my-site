@@ -1,6 +1,6 @@
-import Header from '../header/Header'
-import Navigation from '../nav/Navigation'
-import Footer from '../footer/Footer'
+import Header from './header/Header'
+import Navigation from './nav/Navigation'
+import Footer from './footer/Footer'
 import './Layout.css'
 
 function Layout({ children }) {

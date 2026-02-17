@@ -1,6 +1,6 @@
 import './GalleryGrid.css'
-import { albums } from '../../../data/gallery.js'
-import GalleryItem from '../../../components/gallery/galleryItem/GalleryItem.jsx'
+import { albums } from '../../../../data/gallery.js'
+import GalleryItem from '../galleryItem/GalleryItem.jsx'
 
 function GalleryGrid() {
   return (

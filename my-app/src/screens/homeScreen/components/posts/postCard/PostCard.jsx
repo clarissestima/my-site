@@ -1,7 +1,6 @@
 import './PostCard.css'
 
 function PostCard({ title, excerpt, author, date, image, onReadMore }) {
-  // fallback de imagem se image for undefined
   const imgSrc = image || '/path/to/fallback.png'
 
   return (

@@ -13,7 +13,7 @@ function PostGrid({ posts, limit = 6 }) {
           excerpt={p.excerpt}
           author={p.author}
           date={p.date}
-          image={p.image} // pode ser undefined
+          image={p.image}
           onReadMore={() => alert(`Abrir post: ${p.title}`)}
         />
       ))}

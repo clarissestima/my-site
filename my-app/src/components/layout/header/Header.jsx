@@ -1,6 +1,6 @@
 import './Header.css'
-import logo from '../../assets/text.gif'
-import lace from '../../assets/lace.png'
+import lace from '../../../assets/lace.png'
+import logo from '../../../assets/text.gif'
 
 function Header() {
   return (

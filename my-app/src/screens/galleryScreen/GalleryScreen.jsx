@@ -1,6 +1,6 @@
 import './GalleryScreen.css'
 import Layout from '../../components/layout/Layout'
-import GalleryGrid from './galleryGrid/GalleryGrid'
+import GalleryGrid from './components/galleryGrid/GalleryGrid.jsx'
 
 function GalleryScreen() {
 
