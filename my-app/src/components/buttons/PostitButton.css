@@ -1,0 +1,73 @@
+.postit-button {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-secondary-dark);
+
+  background: var(--color-primary-light);
+  padding: 10px 0;
+
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+
+  box-shadow: 4px 4px 0 var(--color-primary);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+  overflow: visible;
+}
+
+.postit-button::before {
+  content: "";
+  position: absolute;
+
+  top: -8px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(-2deg);
+
+  width: 25%;
+  height: 14px;
+
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(2px);
+
+  z-index: -1;
+
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+.postit-button:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  background: var(--color-primary);
+  box-shadow: 6px 8px 0 var(--color-primary-dark);
+}
+
+.postit-button::after {
+  content: "★";
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+
+  font-size: 0.75rem;
+  color: var(--color-secondary-dark);
+
+  /* segunda estrela do outro lado */
+  text-shadow: calc(100% - 28px) 0 0 var(--color-secondary-dark);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.postit-button:hover::after {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.postit-button:nth-child(even)::before {
+  transform: translateX(-50%) rotate(2deg);
+}

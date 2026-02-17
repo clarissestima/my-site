@@ -1,0 +1,42 @@
+.bio-section {
+  margin: 0;
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+
+  position: relative;
+
+  background: var(--color-primary);
+  padding: 18px;
+
+  box-shadow: 6px 6px 0 var(--color-primary-dark);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-button {
+  display: flex;
+  padding: 8px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-secondary-dark);
+  border: 2px solid var(--color-primary-dark);
+  transition: all 0.2s ease;
+}
+
+.bio-button:hover {
+  transform: translateX(4px);
+  background-color: var(--color-primary-light);
+}
+
+.bio-title {
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
