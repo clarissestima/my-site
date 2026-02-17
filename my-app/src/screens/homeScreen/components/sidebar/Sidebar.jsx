@@ -1,9 +1,10 @@
 import './Sidebar.css'
+import SidebarButtons from '../../../../components/sideBarButtons/SidebarButtons'
 
 function Sidebar() {
   return (
     <section className="right-section">
-      <h2>Links</h2>
+      <SidebarButtons />
     </section>
   )
 }

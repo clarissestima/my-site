@@ -1,29 +1,19 @@
-import './HomeScreen.css'
-import Navigation from '../../components/nav/Navigation'
-import PostList from '../homeScreen/components/postList/PostList'
-import Sidebar from '../../screens/homeScreen/components/sidebar/Sidebar'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
+import Layout from '../../components/layout/Layout'
+import PostList from './components/postList/PostList'
+import Sidebar from './components/sidebar/Sidebar'
 
 function HomeScreen() {
-    const posts = [
+  const posts = [
     { id: 1, title: 'Primeiro post', excerpt: 'Resumo curto do primeiro post.', author: 'Clari', date: 'Jan 31, 2026' },
     { id: 2, title: 'Segundo post', excerpt: 'Resumo curto do segundo post.', author: 'Clari', date: 'Jan 30, 2026' },
     { id: 3, title: 'Terceiro post', excerpt: 'Resumo curto do terceiro post.', author: 'Clari', date: 'Jan 29, 2026' }
   ]
 
   return (
-    <div>
-      <Header />
-      <div className="main-container">
-          <Navigation />
-          <div className="content-wrapper">
-            <PostList posts={posts} />
-            <Sidebar />
-          </div>
-          <Footer />
-      </div>
-    </div>
+    <Layout>
+      <PostList posts={posts} />
+      <Sidebar />
+    </Layout>
   )
 }
 
