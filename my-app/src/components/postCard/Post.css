@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
 
-  padding: 12px;
+  padding: 15px;
 
   transition: none;
 }
@@ -23,44 +23,50 @@
   height: 100%;
   box-sizing: border-box;
 
-  background: radial-gradient(
-    circle at 30% 20%,
-    var(--color-primary-light) 0%,
-    var(--color-primary) 60%,
-    var(--color-primary-dark) 100%
-  );
-  padding: 16px;
+  position: relative;
 
-  box-shadow: 4px 4px 0 var(--color-primary-dark);
+  background: var(--color-primary);
+  padding: 18px;
+
+  box-shadow: 6px 6px 0 var(--color-primary-dark);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.post-card:hover {
-  transform: translateY(-2px);
-  background: var(--color-primary);
-  box-shadow: 6px 8px 0 var(--color-primary-dark);
+.post-card::before {
+  content: "";
+  position: absolute;
+
+  top: -12px;
+  left: 10%;
+
+  width: 65px;
+  height: 18px;
+
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(2px);
+
+  transform: rotate(-6deg);
+
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
 
 .post-card::after {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 14px;
-  transform: translateY(-50%);
 
-  font-size: 0.75rem;
-  color: var(--color-secondary-dark);
+  top: -10px;
+  right: 7%;
 
-  pointer-events: none;
-  z-index: 1;
-}
+  width: 55px;
+  height: 18px;
 
-.post-card:hover::after {
-  transform: translateY(-50%) scale(1.2);
-}
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(2px);
 
-.post-card:nth-child(even)::before {
-  transform: translateX(-50%) rotate(2deg);
+  transform: rotate(8deg);
+
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
 
 .post-image img {
@@ -70,12 +76,13 @@
 }
 
 .post-title {
-  margin: 0 0 6px 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
   text-transform: lowercase;
-  color: var(--color-secondary-dark);
+}
+.post-title::before {
+  content: "✿ ";
+  opacity: 0.5;
 }
 
 .post-meta {
@@ -90,9 +97,10 @@
   line-height: 1.5;
 }
 
-.post-card::before {
-  content: "★ ";
-  margin-bottom: 6px;
-  color: var(--color-tertiary-light);
-  font-size: 0.9rem;
+.post-background:nth-child(even) .post-card {
+  transform: rotate(1.5deg);
+}
+
+.post-background:nth-child(odd) .post-card {
+  transform: rotate(-1.5deg);
 }

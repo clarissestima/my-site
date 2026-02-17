@@ -9,23 +9,44 @@
 .footer-content {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
+  flex-wrap: wrap;
 
-  max-width: 700px;   /* pode aumentar um pouco */
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .footer-section {
-  flex: 1 1 200px;
+  position: relative;
+  flex: 1;
+  min-width: 220px;
 
   background: var(--color-primary-light);
-  padding: 8px 10px;
-
-  box-shadow: 4px 4px 0 var(--color-primary);
+  padding: 14px 16px;
 
   transition: transform 0.3s ease;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+
+  width: 60px;
+  height: 18px;
+
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.footer-section:nth-child(2)::before {
+  transform: translateX(-50%) rotate(4deg);
+  width: 50px;
 }
 
 .footer-section h3 {
@@ -98,12 +119,20 @@
 .currently {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   font-size: 0.85rem;
 }
 
 .currently p {
-  margin: 0;
+  position: relative;
+  padding-left: 12px;
+}
+
+.currently p::before {
+  content: "✿";
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  font-size: 0.7rem;
 }
 
 .currently span {
@@ -112,15 +141,11 @@
 }
 
 .footer-section:nth-child(1) {
-  transform: rotate(-1deg);
-  box-shadow: 5px 5px 0 var(--color-primary);
+  transform: rotate(1.5deg) translateY(2px);
+  box-shadow: 6px 6px 0 var(--color-primary);
 }
 
 .footer-section:nth-child(2) {
-  transform: rotate(1.2deg);
-  box-shadow: 3px 3px 0 var(--color-primary);
-}
-
-.footer-section:hover {
-  transform: rotate(0deg);
+  transform: rotate(-1.5deg) translateY(-2px);
+  box-shadow: 4px 4px 0 var(--color-primary);
 }
