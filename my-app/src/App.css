@@ -1,0 +1,7 @@
+.custom-cursor {
+    cursor: url('./assets/bird-skull-normal-select.cur') 0 0, auto !important;
+}
+
+.custom-cursor:hover {
+  cursor: url('./assets/bird-skull-normal-select.cur') 0 0, auto !important;
+}

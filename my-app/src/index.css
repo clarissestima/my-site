@@ -18,7 +18,6 @@ html, body, #root {
 }
 
 
-
 body {
   margin: 0;
   /* use CSS variable with direct URL fallback to ensure it loads */
@@ -28,6 +27,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-text);
+  
 }
 
 /* Global scrollbar styles */
