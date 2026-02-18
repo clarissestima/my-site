@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {currentYear} Clari ★ made with care</p>
+        <p>© {currentYear} Clari ★ made with hate</p>
       </div>
     </footer>
   )

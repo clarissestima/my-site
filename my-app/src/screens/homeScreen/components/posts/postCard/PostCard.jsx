@@ -1,6 +1,6 @@
 import './PostCard.css'
 
-function PostCard({ title, excerpt, author, date, image, onReadMore }) {
+function PostCard({ title, excerpt, author, date, image}) {
   const imgSrc = image || '/path/to/fallback.png'
 
   return (
@@ -12,7 +12,7 @@ function PostCard({ title, excerpt, author, date, image, onReadMore }) {
         </div>
       )}
         <h2 className="post-title">{title || 'Sem título'}</h2>
-        <p className="post-meta">{author || 'Anônimo'} — {date || 'Data desconhecida'}</p>
+        <p className="post-meta">{author || 'clari'} — {date || 'Data desconhecida'}</p>
         <p className="post-excerpt">{excerpt || 'Sem resumo disponível.'}</p>
       </div>
     </div>
