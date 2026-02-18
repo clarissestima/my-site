@@ -37,10 +37,10 @@ Este é um projeto de blog pessoal desenvolvido em React, com foco em praticar a
 📦 Como executar o projeto
 ```bash
 # Clonar o repositório
-git clone https://github.com/seuusuario/seurepositorio.git
+git clone https://github.com/clarissestima/my-site.git
 
 # Entrar na pasta
-cd nome-do-projeto
+cd my-site
 
 # Instalar dependências
 npm install
