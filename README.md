@@ -32,7 +32,7 @@ Este é um projeto de blog pessoal desenvolvido em React, com foco em praticar a
 
 📷 Preview
 
-<img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/2cd9a4ac-87b6-4602-abe5-3c52dc5edaae" />
+<img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/0a9f2726-e958-4fa7-9533-e4977d546d2c" />
 
 📦 Como executar o projeto
 ```bash
